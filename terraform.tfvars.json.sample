@@ -1,0 +1,6 @@
+{
+    "email": "sample.email.com",
+    "common_name": "my.fqdn.com",
+    "domain_name": "fqdn.com",
+    "rsa_key_bits": 4096
+}
