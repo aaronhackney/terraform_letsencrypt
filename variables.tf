@@ -17,11 +17,6 @@ variable "email" {
   type        = string
 }
 
-variable "common_name" {
-  description = "The CN of the certificate to be created"
-  type        = string
-}
-
 variable "domain_name" {
   description = "The base domain where we are creating new SSL certificates"
   type        = string
@@ -30,4 +25,14 @@ variable "domain_name" {
 variable "rsa_key_bits" {
   description = "Size of the RSA Key to create"
   type        = number
+}
+
+variable "subject_alternative_names" {
+  description = "SAN list"
+  type        = list(string)
+  default     = []
+}
+
+variable "common_names" {
+  type = list(string)
 }
