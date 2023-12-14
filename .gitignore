@@ -88,3 +88,4 @@ terraform.tfvars.json
 terraform.auto.tfvars
 terraform.tfstate*
 certificates*
+archive*

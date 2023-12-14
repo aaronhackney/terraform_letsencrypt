@@ -1,0 +1,4 @@
+email        = "me@mydomain.com"
+common_names  = ["host1.mydomain.com", "host2.mydomain.com", "host3.mydomain.com"]
+domain_name  = "mydomain.com"
+rsa_key_bits = 4096
