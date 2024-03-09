@@ -44,5 +44,5 @@ resource "local_file" "private_key" {
 resource "local_file" "issuer_pem" {
   count    = length(var.common_names)
   content  = acme_certificate.certificate[count.index].issuer_pem
-  filename = "${path.module}/certificates/${var.common_names[count.index]}/ca.em"
+  filename = "${path.module}/certificates/${var.common_names[count.index]}/ca.pem"
 }
